@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" and dir="Itr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="static/css/style.css"> -->
+  <title> Risine Prediction</title>
+  <style>
+    body {
+      /* background-image: url(/back.jpg); */
+      background:url(/static/image/back.jpg);
+      margin:0;
+      padding:0;
+      font-family: sans-serif;
+  /* background : linear-gradient(#141e30,#243b55); */
+    }
+.box{
+  display: contents;
+  width:100%;
+  padding:30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+  background: none;
+  text-align:center;
+  
+}
+.box{
+   color: white;
+   text-transform: uppercase;
+   font-weight:700;
+  
+}
+.box input[type="text"]
+{
+  border:0;
+  /* background:linear-gradient(rgba(31, 30, 30, 0.363),rgba(10, 10, 128, 0.276)); */
+  background: linear-gradient(rgba(13, 3, 15, 0.86),rgba(2, 19, 29, 0.26));
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  border:3px solid #0367fd;
+  padding: 14px 10px;
+  width:520px;
+  outline: none;
+  color : white;
+  border-radius: 24px;
+  transition:0.25px;
+  font-size: medium;
+}
+.box input[type="text"]:focus{
+   width:510px;
+   border-color : #ffc400ec;
+  
+}
+
+.box input[type="Submit"]{
+ 
+  border:0;
+  background:None;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border:3px solid #ffc400ec;
+  padding: 14px 35px;
+  width:220px;
+  outline: none;
+  color : white;
+  border-radius: 24px;
+  transition:0.25px;  
+  cursor:pointer;
+  
+}
+.box input[type="Submit"]:hover{
+  background : #ffc400ec;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  color: #ffc400ec;
+}
+  </style>
+</head>
+
+<body>
+  
+  <form class="box"  method="POST" action= /predict>
+    <h1>  Risine Prediction
+    </h1>
+    <input type ="text" name ='a' placeholder="Area " >
+    <input type ="text" name='b' placeholder="MajorAxisLength " >
+    <input type ="text" name='c' placeholder="MinorAxisLength " >
+    <input type ="text" name='d' placeholder="Eccentricity " >
+    <input type ="text" name='e' placeholder="ConvexArea " >
+    <input type ="text" name='f' placeholder="Extent " >
+    <input type ="text" name='g' placeholder="Perimeter ">
+    <input type ="Submit" value ='Submit'>
+   </form>
+              
+</body>
+</html>
